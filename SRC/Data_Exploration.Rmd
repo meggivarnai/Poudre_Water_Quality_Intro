@@ -1,0 +1,27 @@
+---
+title: "Data Exploration"
+author: "Meggi Varnai"
+date: "3/23/2022"
+output: html_document
+---
+
+```{r data import, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+
+raw_data <- read.csv("Data/WQData_20220323_012434.csv", header = TRUE)
+```
+
+Data from Northern Water at https://www.northernwater.org/our-data/water-quality-data/data
+
+# Cleaning Data
+
+```{r cleaning data}
+head(raw_data)
+
+clean_data <- raw_data %>%
+  filter()
+
+?filter
+```
+
